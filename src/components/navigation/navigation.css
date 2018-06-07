@@ -1,0 +1,21 @@
+.menu {
+  list-style: none;
+}
+
+.menu-item {
+  border-bottom: 1px solid var(--mono-5);
+}
+
+.menu-item-link {
+  display: block;
+  padding: 1.3rem 0;
+  text-align: center;
+  font-size: var(--fs-m);
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  color: var(--white);
+}
+
+.menu-item-link:hover {
+  background-color: var(--brand-2);
+}

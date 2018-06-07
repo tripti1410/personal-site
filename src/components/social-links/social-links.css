@@ -1,0 +1,6 @@
+.social-link-container {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 4.8rem auto;
+}
