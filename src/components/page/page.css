@@ -1,8 +1,10 @@
 .page {
   display: grid;
-  grid-template-columns: 275px auto;
+  grid-template-columns: var(--header-width) calc(100% - var(--header-width));
 }
 
 .container {
-
+  padding: 4.8rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }

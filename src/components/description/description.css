@@ -1,0 +1,6 @@
+.description {
+  font-size: var(--fs-xl);
+  font-family: var(--brandType);
+  line-height: var(--lh-5);
+  color: var(--mono-4);
+}

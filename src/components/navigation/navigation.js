@@ -7,7 +7,7 @@ const Navigation = () => {
       <ul className="menu">
         <li className="menu-item">
           <a href="/" className="menu-item-link">
-            Profile
+            About
           </a>
         </li>
         <li className="menu-item">

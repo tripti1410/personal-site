@@ -3,7 +3,6 @@
   /* Brand colors */
   --brand-1: #191818;
   --brand-2: #cea525;
-  --brand-3: #a10f2b;
 
   /* Monocromatic colors */
   --mono-1: #f9f9f9;
@@ -15,6 +14,11 @@
   /* Common colors */
   --white: #ffffff;
   --black: #000000;
+}
+
+:root {
+  /* ---------------Widths------------ */
+  --header-width: 275px;
 }
 
 /* Resets */
@@ -47,7 +51,8 @@ a { text-decoration: none; cursor: pointer;}
   --fs-s: 1.4rem;
   --fs-m: 1.6rem;
   --fs-l: 1.8rem;
-  --fs-xl: 2.4rem;
+  --fs-xl: 2.0rem;
+  --fs-jumbo: 4.0rem;
 
   /* Line height */
   --lh-1: 1;
