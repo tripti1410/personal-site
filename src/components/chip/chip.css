@@ -1,0 +1,10 @@
+.chip {
+  padding: 0.8rem 1.6rem;
+  text-transform: uppercase;
+  background-color: var(--mono-2);
+  font-family: var(--brandType);
+  font-size: 14px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  color: var(--mono-5);
+}

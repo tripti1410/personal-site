@@ -1,0 +1,13 @@
+.button {
+  font-family: var(--brandType);
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  padding: 0.8rem 1.6rem;
+}
+
+.button--primary {
+  color: var(--white);
+  border: 1px solid var(--brand-2);
+  background-color: var(--brand-2);
+}

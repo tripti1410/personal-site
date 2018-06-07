@@ -52,6 +52,7 @@ a { text-decoration: none; cursor: pointer;}
   --fs-m: 1.6rem;
   --fs-l: 1.8rem;
   --fs-xl: 2.0rem;
+  --fs-xxl: 2.4rem;
   --fs-jumbo: 4.0rem;
 
   /* Line height */

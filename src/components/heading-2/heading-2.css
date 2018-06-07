@@ -1,0 +1,8 @@
+.heading-2 {
+  font-family: var(--brandType);
+  font-size: var(--fs-xxl);
+  font-weight: var(--fw-normal);
+  color: var(--mono-5);
+  margin: 1.6rem 0;
+  padding: 0 0 1.6rem 0;
+}

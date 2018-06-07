@@ -6,4 +6,6 @@
   color: var(--brand-2);
   text-transform: uppercase;
   letter-spacing: 1px;
+  text-align: center;
+  margin: 1.6rem 0;
 }
