@@ -1,5 +1,7 @@
 .masthead {
-  height: 100vh;
+  position: fixed;
+  width: var(--header-width);
+  height: 100%;
   padding: 3.2rem 1.6rem;
   color: var(--white);
   background-color: var(--brand-1);
