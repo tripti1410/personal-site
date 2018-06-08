@@ -9,10 +9,7 @@ const Profile = () => {
         <img className="profile-image" src={profile} alt="Tripti" />
       </div>
       <div className="profile-description">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book.
+        Frontend developer; CSS aficionado; <i class="fas fa-heart red-heart"></i> CSS Grids; writer; learning software and life lessions <i class="fas fa-smile yellow-smile"></i> Wife of passionate developer Amith george <i class="fas fa-heart red-heart"></i>
       </div>
     </div>
   );
