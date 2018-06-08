@@ -1,6 +1,17 @@
 .social-link-container {
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 60%;
   margin: 4.8rem auto;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 3px;
+  background-color: #323131;
+  color: var(--white);
 }
