@@ -1,33 +1,32 @@
 import React from "react";
 import PageTitle from "../../components/page-title/page-title";
+import BLOGS from "./blogs-data";
 
 import "./blogs.css";
 
-const Card = () => {
+const Card = ({ blog }) => {
   return (
     <article className="blog-card">
+    <a href={blog.slug}>
       <div className="blog-image-container">
-        <img src="http://via.placeholder.com/350x280" alt="blog-image" />
+        <img src={blog.image} alt="blog-image" />
       </div>
       <div className="blog-content">
-        <h3 className="blog-title">Blog Title</h3>
+        <h3 className="blog-title">{blog.title}</h3>
         <p className="blog-summary">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s.
+          {blog.subtitle}
         </p>
       </div>
+    </a>
     </article>
   );
 };
-
-const BLOGS = ["1", "2", "3", "4", "5", "6"];
 
 const Blogs = () => {
   return (
     <React.Fragment>
       <PageTitle pageTitle="Blogs" />
-      <div className="blogs">{BLOGS.map(blog => <Card key={blog} />)}</div>
+      <div className="blogs">{BLOGS.map(blog => <Card key={blog.id} blog={blog}/>)}</div>
     </React.Fragment>
   );
 };
