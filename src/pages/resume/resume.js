@@ -1,6 +1,5 @@
 import React from "react";
 import PageTitle from "../../components/page-title/page-title";
-import Description from "../../components/description/description";
 import Chip from "../../components/chip/chip";
 import Card from "./card";
 import Button from "../../components/button/button";
@@ -8,14 +7,14 @@ import Heading2 from "../../components/heading-2/heading-2";
 
 import "./resume.css";
 const SKILLS = [
-  "html5",
-  "css3",
-  "javascript",
-  "react",
-  "webpack",
-  "jest",
   "frontend performance",
   "accessibility",
+  "react",
+  "javascript",
+  "webpack",
+  "jest",
+  "html5",
+  "css3",
   "jQuery",
   "sass",
   "bem",
@@ -35,7 +34,11 @@ const Resume = () => {
               title="Senior Frontend Developer"
               timeDuration="APR 2018-Present"
             >
-              <p> I am working on redesigning our core product, the CMS and implementing the design system which will help in building other products faster.
+              <p>
+                {" "}
+                I am working on redesigning our core product, the CMS and
+                implementing the design system which will help in building other
+                products faster.
               </p>
             </Card>
             <Card title="Frontend Developer" timeDuration="JAN 2016 - MAR 2018">
@@ -73,7 +76,7 @@ const Resume = () => {
         <section className="right-pan">
           <Heading2 heading="Skills" iconClass="fas fa-toolbox" />
           <div className="skills-container">
-            {SKILLS.map(skill => <Chip value={skill} />)}
+            {SKILLS.map((skill, index) => <Chip key={index} value={skill} />)}
           </div>
 
           <Button classes="button--primary">

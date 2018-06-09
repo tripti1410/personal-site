@@ -15,18 +15,26 @@ const Profile = () => {
         <span className="separator">|</span>
         <span className="item">CSS aficionado</span>
         <span className="separator">|</span>
-        <span className="item"><i class="fas fa-heart red-heart" />&nbsp;
-        CSS Grids</span>
+        <span className="item">
+          <i className="fas fa-heart red-heart" />&nbsp; CSS Grids
+        </span>
         <span className="separator">|</span>
         <span className="item">Writer</span>
         <span className="separator">|</span>
         <span className="item">Learning software and life lessions</span>
         <span className="separator">|</span>
-        <span className="item">Riding the waves with &nbsp;
-        <a href="https://www.linkedin.com/in/amithgeorge/" target="_blank" className="profile__link">
-          Amith George
-        </a>
-        &nbsp;<i class="fas fa-heart red-heart" /></span>
+        <span className="item">
+          Riding the waves with &nbsp;
+          <a
+            href="https://www.linkedin.com/in/amithgeorge/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="profile__link"
+          >
+            Amith George
+          </a>
+          &nbsp;<i className="fas fa-heart red-heart" />
+        </span>
       </div>
     </div>
   );
