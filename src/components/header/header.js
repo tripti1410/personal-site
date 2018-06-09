@@ -2,6 +2,7 @@ import React from "react";
 import SocialLinks from "../social-links/social-links";
 import Navigation from "../navigation/navigation";
 import Profile from "../profile/profile";
+import ProfileName from "../profile-name/profile-name";
 import cx from "classnames";
 import "./header.css";
 
@@ -26,7 +27,7 @@ class Header extends React.Component {
             {!this.state.isMenuOpen && <i className="fas fa-bars"> </i>}
             {this.state.isMenuOpen && <i class="fas fa-times"></i>}
           </span>
-          <span>Trapti Rahangdale</span>
+          <ProfileName />
         </div>
         <header className={leftHeaderClasses}>
           <Profile />

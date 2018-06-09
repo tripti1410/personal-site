@@ -1,15 +1,32 @@
 import React from "react";
+import ProfileName from "../profile-name/profile-name";
 import profile from "../../profile.JPG";
 import "./profile.css";
 
 const Profile = () => {
   return (
-    <div className="profile-container">
-      <div className="profile-image-container">
-        <img className="profile-image" src={profile} alt="Tripti" />
+    <div className="profile">
+      <div className="profile__image-container">
+        <img className="profile__image" src={profile} alt="Tripti" />
       </div>
-      <div className="profile-description">
-        Frontend developer; CSS aficionado; <i class="fas fa-heart red-heart"></i> CSS Grids; writer; learning software and life lessions <i class="fas fa-smile yellow-smile"></i> Wife of passionate developer Amith george <i class="fas fa-heart red-heart"></i>
+      <ProfileName />
+      <div className="profile__description">
+        <span className="item">Frontend developer</span>
+        <span className="separator">|</span>
+        <span className="item">CSS aficionado</span>
+        <span className="separator">|</span>
+        <span className="item"><i class="fas fa-heart red-heart" />&nbsp;
+        CSS Grids</span>
+        <span className="separator">|</span>
+        <span className="item">Writer</span>
+        <span className="separator">|</span>
+        <span className="item">Learning software and life lessions</span>
+        <span className="separator">|</span>
+        <span className="item">Riding the waves with &nbsp;
+        <a href="https://www.linkedin.com/in/amithgeorge/" target="_blank" className="profile__link">
+          Amith George
+        </a>
+        &nbsp;<i class="fas fa-heart red-heart" /></span>
       </div>
     </div>
   );

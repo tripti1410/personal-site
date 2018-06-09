@@ -1,29 +1,37 @@
-.profile-image-container {
-  width: 200px;
-  height: 200px;
-  margin: auto;
-  border-radius: 50%;
-  overflow: hidden;
-  background-color: var(--brand-2); }
-
-.profile-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
-
-.profile-description {
-  margin-top: 1.2rem;
-  margin-bottom: 3rem;
-  padding: 0;
-  color: var(--mono-3);
-  text-align: center;
-  font-weight: var(--fw-normal);
-  font-size: var(--fs-xs);
-  line-height: var(--lh-5);
-  font-family: var(--brandType); }
-
-.red-heart {
-  color: var(--brand-3); }
-
-.yellow-smile {
-  color: var(--brand-2); }
+.profile {
+  display: grid;
+  grid-auto-rows: min-content;
+  grid-row-gap: 16px;
+  align-items: center;
+  justify-items: center; }
+  .profile__image-container {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: var(--brand-2); }
+  .profile__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .profile__description {
+    margin-top: 1.2rem;
+    padding: 0;
+    color: var(--mono-3);
+    text-align: center;
+    font-weight: var(--fw-normal);
+    font-size: var(--fs-xs);
+    line-height: var(--lh-5);
+    font-family: var(--brandType); }
+  .profile__link {
+    color: inherit;
+    text-decoration-line: underline; }
+  .profile .red-heart {
+    color: var(--brand-3); }
+  .profile .yellow-smile {
+    color: var(--brand-2); }
+  .profile .item {
+    font-weight: var(--fw-bold); }
+  .profile .separator {
+    margin: 0 0.4rem; }

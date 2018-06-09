@@ -35,9 +35,7 @@ const Resume = () => {
               title="Senior Frontend Developer"
               timeDuration="APR 2018-Present"
             >
-              <p>
-                - Working on the new Design of our Content Management System.<br />
-                - Along with the new design building Design System.
+              <p> I am working on redesigning our core product, the CMS and implementing the design system which will help in building other products faster.
               </p>
             </Card>
             <Card title="Frontend Developer" timeDuration="JAN 2016 - MAR 2018">
