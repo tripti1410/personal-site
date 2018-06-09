@@ -6,23 +6,18 @@ const Navigation = () => {
     <nav className="navigation">
       <ul className="menu">
         <li className="menu-item">
+          <a href="/resume" className="menu-item-link">
+            Resume
+          </a>
+        </li>
+        <li className="menu-item">
+          <a href="/blogs" className="menu-item-link">
+            Blogs
+          </a>
+        </li>
+        <li className="menu-item">
           <a href="/" className="menu-item-link">
             About
-          </a>
-        </li>
-        <li className="menu-item">
-          <a href="/" className="menu-item-link">
-            Profile
-          </a>
-        </li>
-        <li className="menu-item">
-          <a href="/" className="menu-item-link">
-            Blog
-          </a>
-        </li>
-        <li className="menu-item">
-          <a href="/" className="menu-item-link">
-            Contact
           </a>
         </li>
       </ul>
