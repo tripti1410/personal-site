@@ -1,8 +1,10 @@
 .menu {
-  list-style: none; }
+  list-style: none;
+}
 
 .menu-item {
-  border-bottom: 1px solid var(--mono-5); }
+  border-bottom: 1px solid var(--mono-5);
+}
 
 .menu-item-link {
   display: block;
@@ -11,7 +13,9 @@
   font-size: var(--fs-m);
   letter-spacing: 1px;
   text-transform: capitalize;
-  color: var(--white); }
+  color: var(--white);
+}
 
 .menu-item-link:hover {
-  background-color: var(--brand-2); }
+  background-color: var(--brand-2);
+}

@@ -7,13 +7,14 @@
   visibility: hidden;
   opacity: 0;
   position: absolute;
-  transition: all 0.5s ease; }
+  transition: all 0.5s ease;
   @media (min-width: 750px) {
-    .masthead {
-      visibility: visible;
-      opacity: 1;
-      width: var(--header-width);
-      position: fixed; } }
+    visibility: visible;
+    opacity: 1;
+    width: var(--header-width);
+    position: fixed;
+  }
+}
 
 .header-main-mobile {
   display: flex;
@@ -23,16 +24,18 @@
   background-color: var(--brand-1);
   color: var(--brand-2);
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
   @media (min-width: 750px) {
-    .header-main-mobile {
-      display: none; } }
-
+    display: none;
+  }
+}
 .toggle-for-mobile {
   width: var(--header-width);
   visibility: visible;
   opacity: 1;
-  transition: all 0.5s ease; }
+  transition: all 0.5s ease;
   @media (min-width: 750px) {
-    .toggle-for-mobile {
-      display: none; } }
+    display: none;
+  }
+}
+

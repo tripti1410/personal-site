@@ -14,7 +14,7 @@ const SocialLinks = () => {
         <i className="fab fa-linkedin-in" />
       </a>
       <a href="https://medium.com/@r_tripti" className="social-link" target="_blank">
-      <i class="fab fa-medium-m"></i>
+      <i className="fab fa-medium-m"></i>
       </a>
     </div>
   );
