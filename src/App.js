@@ -1,5 +1,10 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+  Switch
+} from "react-router-dom";
 
 import "./global.css";
 import Page from "./components/page/page";
@@ -12,9 +17,12 @@ class App extends Component {
     return (
       <Router>
         <Page>
-          <Route exact path="/" component={Resume} />
-          <Route path="/blogs" component={Blogs} />
-          <Route path="/about" component={About} />
+          <Switch>
+            <Route exact path="/resume" component={Resume} />
+            <Route exact path="/blogs" component={Blogs} />
+            <Route exact path="/about" component={About} />
+            <Redirect from="/" to="/resume" />
+          </Switch>
         </Page>
       </Router>
     );
