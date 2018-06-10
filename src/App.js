@@ -18,10 +18,10 @@ class App extends Component {
       <Router basename="/personal-site">
         <Page>
           <Switch>
-            <Route exact path="/resume" component={Resume} />
-            <Route exact path="/blogs" component={Blogs} />
+            <Route exact path="/personal-site/resume" component={Resume} />
+            <Route exact path="/personal-site/blogs" component={Blogs} />
             <Route exact path="/about" component={About} />
-            <Redirect from="/" to="/resume" />
+            <Redirect from="/personal-site" to="/personal-site/resume" />
           </Switch>
         </Page>
       </Router>
