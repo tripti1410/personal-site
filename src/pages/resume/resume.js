@@ -26,8 +26,8 @@ const Resume = () => {
   return (
     <div className="resume-page">
       <PageTitle pageTitle="Resume" />
-      <div className="two-column-layout">
-        <section className="left-pan">
+      <div className="resume-page__layout resume-layout">
+        <section className="resume-layout__left-pan">
           <article>
             <Heading2 heading="Work Experience" iconClass="fas fa-bookmark" />
             <Card
@@ -35,7 +35,6 @@ const Resume = () => {
               timeDuration="APR 2018-Present"
             >
               <p>
-                {" "}
                 I am working on redesigning our core product, the CMS and
                 implementing the design system which will help in building other
                 products faster.
@@ -66,14 +65,14 @@ const Resume = () => {
             <Heading2 heading="Education" iconClass="fas fa-graduation-cap" />
             <Card
               title="Bachelor of Engineering in Civil"
-              timeDuration="JUN 2007 - JUN 2011"
+              timeDuration="2007 - 2011"
             >
               <p>Ujjain Engineering college Ujjain</p>
             </Card>
           </article>
         </section>
 
-        <section className="right-pan">
+        <section className="resume-layout__right-pan">
           <Heading2 heading="Skills" iconClass="fas fa-toolbox" />
           <div className="skills-container">
             {SKILLS.map((skill, index) => <Chip key={index} value={skill} />)}

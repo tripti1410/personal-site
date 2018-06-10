@@ -1,0 +1,73 @@
+.resume-page {
+  &__layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 4.8rem;
+    margin-bottom: 4.8rem;
+    @media (min-width: 750px) {
+      grid-template-columns: 3fr 1fr;
+    }
+  }
+
+  span.chip {
+    margin-bottom: 1rem;
+  }
+
+  .skills-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .heading-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0.8rem 0;
+    border-bottom: 1px solid var(--brand-2);
+  }
+
+  h3 {
+    font-family: var(--brandType);
+    font-size: var(--fs-m);
+    margin: 0;
+  }
+
+  time {
+    color: var(--brand-2);
+    font-family: var(--brandType);
+    font-weight: var(--fw-normal);
+    font-size: var(--fs-xs);
+    text-transform: uppercase;
+    @media (min-width: 750px) {
+      font-size: var(--fs-s);
+    }
+  }
+
+  time .calendar-icon {
+    margin-right: 0.4rem;
+  }
+
+  p {
+    font-family: var(--brandType);
+    font-size: var(--fs-m);
+    line-height: 1.5;
+    color: var(--mono-4);
+  }
+}
+
+.resume-layout {
+  &__left-pan {
+    display: grid;
+    @media (min-width: 750px) {
+      grid-row-gap: 3.2rem;
+    }
+  }
+
+  &__right-pan {
+    .skills-container {
+      margin-bottom: 3.2rem;
+    }
+  }
+}
