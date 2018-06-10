@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "../link/link";
 import ProfileName from "../profile-name/profile-name";
 import profile from "../../profile.JPG";
 import "./profile.css";
@@ -25,14 +26,7 @@ const Profile = () => {
         <span className="separator">|</span>
         <span className="item">
           Riding the waves with &nbsp;
-          <a
-            href="https://www.linkedin.com/in/amithgeorge/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="profile__link"
-          >
-            Amith George
-          </a>
+          <Link target href="https://www.linkedin.com/in/amithgeorge/">Amith George</Link>
           &nbsp;<i className="fas fa-heart red-heart" />
         </span>
       </div>

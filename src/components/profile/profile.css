@@ -24,9 +24,6 @@
     font-size: var(--fs-xs);
     line-height: var(--lh-5);
     font-family: var(--brandType); }
-  .profile__link {
-    color: inherit;
-    text-decoration-line: underline; }
   .profile .red-heart {
     color: var(--brand-3); }
   .profile .yellow-smile {

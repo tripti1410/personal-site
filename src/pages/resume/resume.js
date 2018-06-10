@@ -5,6 +5,7 @@ import Chip from "../../components/chip/chip";
 import Card from "./card";
 import Button from "../../components/button/button";
 import Heading2 from "../../components/heading-2/heading-2";
+import Link from "../../components/link/link";
 
 import "./resume.css";
 const SKILLS = [
@@ -57,8 +58,8 @@ const Resume = () => {
               </p>
               <p>
                 Couple of websites I worked on - <br />
-                - https://www.thequint.com/ <br />
-                - https://www.livehistoryindia.com/
+                - <Link href="https://www.thequint.com" target>Thequint</Link><br />
+                - <Link href="https://www.livehistoryindia.com" target>Live History India</Link>
               </p>
             </Card>
             <Card title="Software Engineer" timeDuration="AUG 2015 - JAN 2011">
