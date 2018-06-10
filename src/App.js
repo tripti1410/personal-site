@@ -15,7 +15,7 @@ import Blogs from "./pages/blogs/blogs";
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename="/personal-site">
         <Page>
           <Switch>
             <Route exact path="/resume" component={Resume} />
