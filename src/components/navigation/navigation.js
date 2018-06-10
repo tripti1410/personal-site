@@ -15,11 +15,11 @@ const Navigation = () => {
             Blogs
           </a>
         </li>
-        <li className="menu-item">
+        {/* <li className="menu-item">
           <a href="/about" className="menu-item-link">
             About
           </a>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
