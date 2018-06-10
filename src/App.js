@@ -15,13 +15,13 @@ import Blogs from "./pages/blogs/blogs";
 class App extends Component {
   render() {
     return (
-      <Router basename="/personal-site">
+      <Router>
         <Page>
           <Switch>
-            <Route exact path="/personal-site/resume" component={Resume} />
-            <Route exact path="/personal-site/blogs" component={Blogs} />
-            <Route exact path="/about" component={About} />
-            <Redirect from="/personal-site" to="/personal-site/resume" />
+            <Route exact path="/resume" component={Resume} />
+            <Route exact path="/blogs" component={Blogs} />
+            {/* <Route exact path="/about" component={About} /> */}
+            <Redirect from="/" to="/resume" />
           </Switch>
         </Page>
       </Router>
