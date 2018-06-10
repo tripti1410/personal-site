@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
 import PageTitle from "../../components/page-title/page-title";
 import Chip from "../../components/chip/chip";
 import Card from "./card";
@@ -58,8 +58,15 @@ const Resume = () => {
               </p>
               <p>
                 Couple of websites I worked on - <br />
-                - <Link href="https://www.thequint.com" target>Thequint</Link><br />
-                - <Link href="https://www.livehistoryindia.com" target>Live History India</Link>
+                -{" "}
+                <Link href="https://www.thequint.com" target>
+                  Thequint
+                </Link>
+                <br />
+                -{" "}
+                <Link href="https://www.livehistoryindia.com" target>
+                  Live History India
+                </Link>
               </p>
             </Card>
             <Card title="Software Engineer" timeDuration="AUG 2015 - JAN 2011">
@@ -83,9 +90,13 @@ const Resume = () => {
             {SKILLS.map((skill, index) => <Chip key={index} value={skill} />)}
           </div>
 
-          <Button classes="button--primary">
+          <a
+            download
+            href="Trapti-Rahangdale-Resume.pdf"
+            className="resume-page__download"
+          >
             <i className="fas fa-download" /> Download resume
-          </Button>
+          </a>
         </section>
       </div>
     </div>
