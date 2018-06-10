@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from 'react-helmet';
 import PageTitle from "../../components/page-title/page-title";
 import BLOGS from "./blogs-data";
 
@@ -23,6 +24,9 @@ const Card = ({ blog }) => {
 const Blogs = () => {
   return (
     <React.Fragment>
+      <Helmet>
+        <title>Blogs | Trapti</title>
+      </Helmet>
       <PageTitle pageTitle="Blogs" />
       <div className="blogs">
         {BLOGS.map(blog => <Card key={blog.id} blog={blog} />)}

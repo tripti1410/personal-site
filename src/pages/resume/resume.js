@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from 'react-helmet';
 import PageTitle from "../../components/page-title/page-title";
 import Chip from "../../components/chip/chip";
 import Card from "./card";
@@ -25,6 +26,9 @@ const SKILLS = [
 const Resume = () => {
   return (
     <div className="resume-page">
+      <Helmet>
+        <title>Resume | Trapti</title>
+      </Helmet>
       <PageTitle pageTitle="Resume" />
       <div className="resume-page__layout resume-layout">
         <section className="resume-layout__left-pan">
